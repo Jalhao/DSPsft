@@ -1,0 +1,10 @@
+.auth/
+.env.local
+node_modules/
+
+samples/*.json
+samples/*.md
+samples/dsp-report-*.json
+samples/dsp-profit-adjustment-*
+samples/*.har
+samples/*.tmp

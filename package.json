@@ -1,0 +1,24 @@
+{
+  "name": "dsp-report-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only DSP report collection tools with Playwright session reuse.",
+  "scripts": {
+    "auth": "node scripts/auth.js",
+    "collect": "node scripts/collect.js",
+    "report": "node scripts/query-dsp-report.js",
+    "report:baidu": "node scripts/query-dsp-report.js --dsp 200001,200021",
+    "drilldown": "node scripts/drilldown-report.js",
+    "draft:profit": "node scripts/draft-profit-adjustment.js",
+    "apply:profit": "node scripts/apply-profit-adjustment.js",
+    "analyze": "node scripts/analyze-report.js",
+    "advise:baidu": "npm run report:baidu && npm run analyze",
+    "check": "node --check scripts/auth.js && node --check scripts/collect.js && node --check scripts/query-dsp-report.js && node --check scripts/drilldown-report.js && node --check scripts/draft-profit-adjustment.js && node --check scripts/apply-profit-adjustment.js && node --check scripts/analyze-report.js && node --check tools/page-snapshot-snippet.js && node --check tools/network-recorder-snippet.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

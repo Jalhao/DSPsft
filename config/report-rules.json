@@ -1,0 +1,25 @@
+{
+  "profitRate": {
+    "criticalBelow": 15,
+    "warningBelow": 25,
+    "goodAtOrAbove": 30
+  },
+  "sendRate": {
+    "warningBelow": 5,
+    "healthyAtOrAbove": 10
+  },
+  "bidRate": {
+    "warningBelow": 1
+  },
+  "conversionRate": {
+    "warningBelow": 0.01
+  },
+  "volume": {
+    "lowReqSendBelow": 1000000,
+    "activeReqSendAtOrAbove": 10000000
+  },
+  "suggestedAdjustment": {
+    "qpsDecreasePercent": 10,
+    "qpsIncreasePercent": 10
+  }
+}
